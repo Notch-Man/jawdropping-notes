@@ -16,10 +16,11 @@
     noteDescription,
     noteColor,
     noteIndex,
+    noteTags,
     notes,
     noteDate,
   } from "../stores";
-  let tNoteTitle, tNoteDescription, tNoteColor;
+  let tNoteTitle, tNoteDescription, tNoteColor, tNoteTags;
 
   const colorOptions = [
     "Primary",
@@ -46,7 +47,6 @@
             bind:value={tNoteTitle}
             name="noteTitle"
             type="text"
-            placeholder="Enter the note title here.."
             required
           />
         </div>
@@ -58,6 +58,16 @@
             name="noteDescription"
             type="textarea"
             required
+          />
+        </div>
+        <div class="mb-3">
+          <Label for="noteTags">Tags:</Label>
+          <Input
+            bind:value={tNoteTags}
+            id="noteTags"
+            name="noteTags"
+            type="text"
+            placeholder="Tags should be space seperated."
           />
         </div>
         <div class="mb-3">
@@ -87,6 +97,7 @@
             noteTitle.set(tNoteTitle);
             noteColor.set(tNoteColor);
             noteDescription.set(tNoteDescription);
+            noteTags.set(tNoteTags.split(" "));
             $noteDate = moment().format("MMMM Do YYYY");
             $noteIndex++;
 
@@ -96,8 +107,10 @@
               description: $noteDescription,
               color: $noteColor,
               date: $noteDate,
+              tags: $noteTags,
             });
             $notes = $notes;
+
             localStorage.setItem("notes", JSON.stringify($notes));
           }
         }}>Add</Button
