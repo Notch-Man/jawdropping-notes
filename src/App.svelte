@@ -19,6 +19,7 @@
         description={note.description}
         color={note.color}
         date={note.date}
+        tags={note.tags}
         on:delete={(e) => {
           let index = e.detail.text;
 
