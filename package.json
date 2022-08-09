@@ -16,9 +16,8 @@
   "dependencies": {
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
+    "marked": "^4.0.18",
     "moment": "^2.29.4",
-    "showdown": "^2.1.0",
-    "sveltestrap": "^5.9.0",
-    "turndown": "^7.1.1"
+    "sveltestrap": "^5.9.0"
   }
 }
