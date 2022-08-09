@@ -10,5 +10,8 @@
 @media only screen and (max-width: 800px) {
   .d-inline-flex {
     justify-content: center;
+    width: calc(100%);
+    height: calc(100vh - 57px);
+    align-items: center;
   }
 }
