@@ -6,13 +6,14 @@
     CardTitle,
     CardHeader,
     CardText,
+    Badge,
   } from "sveltestrap";
   import { createEventDispatcher } from "svelte";
   import { fly } from "svelte/transition";
 
   const dispatcher = createEventDispatcher();
 
-  export let title, color, description, id, date;
+  export let title, color, description, id, date, tags;
 </script>
 
 <main>
@@ -33,9 +34,21 @@
         <CardTitle>{title}</CardTitle>
         <CardText>
           {@html description}
+          <br />
+          {#if tags.length !== 0}
+            {#each tags as tag}
+              <span>
+                {#if color.toLowerCase() !== "secondary"}
+                  <Badge color="secondary">{tag}</Badge>
+                {:else}
+                  <Badge color="primary">{tag}</Badge>
+                {/if}
+              </span>
+            {/each}
+          {/if}
         </CardText>
       </CardBody>
-      <CardFooter class="text-end">
+      <CardFooter class="text-end lead">
         {date}
       </CardFooter>
     </Card>
