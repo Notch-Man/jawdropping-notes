@@ -10,6 +10,7 @@
   } from "sveltestrap";
   import { createEventDispatcher } from "svelte";
   import { fly } from "svelte/transition";
+  import { marked } from "marked";
 
   const dispatcher = createEventDispatcher();
 
@@ -28,13 +29,12 @@
       }}
     >
       <CardHeader>
-        {color}
+        {date}
       </CardHeader>
       <CardBody>
         <CardTitle>{title}</CardTitle>
         <CardText>
-          {@html description}
-          <br />
+          {@html marked(description)}
           {#if tags.length !== 0}
             {#each tags as tag}
               <span>
@@ -48,9 +48,6 @@
           {/if}
         </CardText>
       </CardBody>
-      <CardFooter class="text-end lead">
-        {date}
-      </CardFooter>
     </Card>
   </div>
 </main>
