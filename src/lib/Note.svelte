@@ -2,8 +2,7 @@
   import {
     Card,
     CardBody,
-    CardFooter,
-    CardTitle,
+    CardSubtitle,
     CardHeader,
     CardText,
     Badge,
@@ -29,10 +28,10 @@
       }}
     >
       <CardHeader>
-        {date}
+        {title}
       </CardHeader>
       <CardBody>
-        <CardTitle>{title}</CardTitle>
+        <CardSubtitle>{date}</CardSubtitle>
         <CardText>
           {@html marked(description)}
           {#if tags.length !== 0}
