@@ -88,7 +88,7 @@
     </ModalBody>
     <ModalFooter>
       <Button
-        color="primary"
+        color="success"
         on:click={() => {
           toggle();
           if (tNoteTitle < 2 || tNoteDescription < 5) {
@@ -115,7 +115,7 @@
           }
         }}>Add</Button
       >
-      <Button color="danger" on:click={toggle}>Cancel</Button>
+      <Button color="primary" outline on:click={toggle}>Cancel</Button>
     </ModalFooter>
   </Modal>
 </main>
