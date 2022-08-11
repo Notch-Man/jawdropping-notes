@@ -13,7 +13,7 @@
 <main>
   <Card
     style="width: 18rem;"
-    class="text-center jn-card border border-primary mt-4 ms-4 me-4"
+    class="text-center jn-card border border-primary mt-5 ms-4 me-4"
     on:click={() => {
       toggle();
     }}
