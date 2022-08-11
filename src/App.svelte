@@ -1,5 +1,5 @@
 <script>
-  import { CardDeck } from "sveltestrap/";
+  import { CardDeck, Button } from "sveltestrap/";
 
   import Header from "./lib/Header.svelte";
   import Note from "./lib/Note.svelte";
@@ -10,6 +10,15 @@
 
 <main>
   <Header />
+  <div class="mt-2 ms-2 text-end me-2 mb-0">
+    <Button
+      color="danger"
+      on:click={() => {
+        $notes = [];
+        $notes = $notes;
+      }}>Clear</Button
+    >
+  </div>
   <CardDeck class="d-inline-flex flex-wrap" style="">
     <AddNoteCard />
     {#each $notes as note}
