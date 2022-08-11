@@ -48,3 +48,5 @@ But, there will be some layout issues (with images, etc...) as it is only design
 
 **PS**: Please DO NOT use this as your primary notes app! I made this for learning purposes only and that's that.
 If you want to check it out, you're free to do so.
+
+`Made with 💘 by Notch Man`
