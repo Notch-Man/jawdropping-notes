@@ -11,7 +11,7 @@ A fun and easy to use notes app made with **Svelte**.
 
 ## Screenshots 🖼️
 
-(The screenshot is a bit outdated)
+(The screenshot is a bit outdated & I am too lazy to update 😂)
 
 ![screenshot 1 with modal](./screenshots/screenshot%201.jpeg)
 
