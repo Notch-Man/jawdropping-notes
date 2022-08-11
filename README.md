@@ -4,7 +4,7 @@ A fun and easy to use notes app made with **Svelte**.
 
 ## Features 🚀
 
-- Has a simple UI made with `Bootstrap 5.2`.
+- Has a simple UI with fluid transitions made with `Bootstrap 5.2` & Svelte's pre-build transition template.
 - Supports Markdown and comes with pre-built (8 colors) for note customization and to mark importance.
 - Stores the notes in `localstorage` for later use.
 - Can be used with multiple devices _(responsive design)_.
@@ -30,3 +30,19 @@ After you press it, you will see a modal centered on the screen. Add title, desc
 Choose a color (Light, Primary, Secondary, Success, Danger, Warning, Info, Dark), default is Light, and press the `Add` button or `Cancel` if you don't want to add a note.
 
 ### Deleting a Note
+
+Click on a note to delete it.
+
+### Advanced
+
+#### Adding Markdown
+
+You can add markdown by putting using its syntax in the Description field.
+
+#### Using HTML
+
+If you want, you can add custom HTML and use `Bootstrap 5.2` classes & utilities.
+But, there will be some layout issues (with images, etc...) as it is only designed for Markdown.
+
+**PS**: Please DO NOT use this as your primary notes app! I made this for learning purposes only and that's that.
+If you want to check it out, you're free to do so.
