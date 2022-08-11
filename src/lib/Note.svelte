@@ -19,7 +19,7 @@
 <main>
   <div transition:fly={{ y: 200, duration: 500 }}>
     <Card
-      class="me-4 ms-4 mt-4 mb-2 text-bg-{color.toLowerCase()} jn-card"
+      class="me-4 ms-4 mt-5 mb-2 text-bg-{color.toLowerCase()} jn-card"
       style="width:18rem;"
       on:click={() => {
         dispatcher("delete", {
